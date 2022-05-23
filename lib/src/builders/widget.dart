@@ -62,7 +62,7 @@ class _PageTurnWidgetState extends State<PageTurnWidget> {
         builder: (BuildContext context, BoxConstraints constraints) {
           final size = constraints.biggest;
           return Stack(
-            overflow: Overflow.clip,
+            clipBehavior: Clip.hardEdge,
             children: <Widget>[
               Positioned(
                 left: 1 + size.width,
